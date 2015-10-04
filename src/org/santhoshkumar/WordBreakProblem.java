@@ -52,10 +52,10 @@ public class WordBreakProblem {
         for(int l = 1; l <= word.length(); l++){
             for(int i=0; i < word.length() -l + 1 ; i++){
                 int j = i + l-1;
-                String str = word.substring(i,j+1);
+                String s = word.substring(i,j+1);
                 //if string between i to j is in dictionary T[i][j] is true
-                System.out.println(str);
-                if(dict.contains(str)){
+                System.out.println(s);
+                if(dict.contains(s)){
                     T[i][j] = i;
                     continue;
                 }
