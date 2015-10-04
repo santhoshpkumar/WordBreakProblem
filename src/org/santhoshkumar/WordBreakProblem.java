@@ -48,8 +48,6 @@ public class WordBreakProblem {
             }
         }
 
-
-
         //fill up the matrix in bottom up manner
         for(int l = 1; l <= word.length(); l++){
             for(int i=0; i < word.length() -l + 1 ; i++){
